@@ -1,0 +1,5 @@
+package bar;
+
+public enum Fizetesi_mod {
+
+}

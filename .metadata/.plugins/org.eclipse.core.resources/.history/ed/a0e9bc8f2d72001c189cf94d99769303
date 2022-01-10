@@ -1,0 +1,25 @@
+package bar;
+
+import java.io.FileWriter;
+
+public class Kiiras {
+
+	XMLOutputFactory xof = XMLOutputFactory.newInstance();
+	XMLStreamWriter xsw = null;
+	try{
+	    xsw = xof.createXMLStreamWriter(new FileWriter("file.xml"));
+	}
+	catch (Exception e){
+	        System.err.println("Unable to write the file: " + e.getMessage());
+	}
+	finally{
+	    try{
+	        if (xsw != null){
+	                xsw.close();
+	        }
+	    }
+	    catch (Exception e){
+	            System.err.println("Unable to close the file: " + e.getMessage());
+	    }
+	}
+}

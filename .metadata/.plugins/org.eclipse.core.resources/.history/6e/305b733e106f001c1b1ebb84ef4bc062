@@ -1,0 +1,6 @@
+package bar;
+
+public enum bor_fajtak {
+
+	Fehér, Vörös, Rozé; 
+}

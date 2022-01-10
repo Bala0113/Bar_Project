@@ -1,0 +1,7 @@
+package bar;
+
+public class Kiiras {
+
+	ObjectMapper mapper = new XmlMapper();
+	
+}
